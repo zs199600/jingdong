@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <com.facebook.drawee.view.SimpleDraweeView
+       android:layout_gravity="center_horizontal"
+       android:layout_width="130px"
+       android:layout_height="130px"
+       android:id="@+id/sd"></com.facebook.drawee.view.SimpleDraweeView>
+   <TextView
+       android:textSize="30px"
+       android:layout_gravity="center_horizontal"
+       android:text="你好啊"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/feilei_right_zi_tv"/>
+
+
+</LinearLayout>

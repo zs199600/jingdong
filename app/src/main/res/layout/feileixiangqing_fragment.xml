@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.jingdong.myview.PageContainer
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.example.administrator.jingdong.myview.Page
+       android:id="@+id/pageOne"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+   <com.stx.xhb.xbanner.XBanner
+       android:id="@+id/xbnr"
+       app:AutoPlayTime="1000"
+       android:layout_width="match_parent"
+       android:layout_height="500px"></com.stx.xhb.xbanner.XBanner>
+      <TextView
+          android:textSize="50px"
+          android:text="你猜"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/feilei_xiangqing_fragment_title"/>
+
+   <TextView
+       android:textSize="50px"
+       android:layout_marginTop="30px"
+       android:text="85"
+       android:layout_width="match_parent"
+       android:layout_height="0px"
+       android:layout_weight="1"
+       android:id="@+id/feilei_xiangqing_fragment_price"/>
+   </LinearLayout>
+   </com.example.administrator.jingdong.myview.Page>
+
+
+   <com.example.administrator.jingdong.myview.Page
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_behavior="@string/pageBehavior">
+      <WebView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/web"></WebView>
+
+   </com.example.administrator.jingdong.myview.Page>
+
+   <include layout="@layout/rg"></include>
+
+</com.example.administrator.jingdong.myview.PageContainer>

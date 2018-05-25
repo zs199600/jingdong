@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    >
+
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:textSize="40px"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="供应商"/>
+        <RadioButton
+            android:textSize="40px"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="店铺"/>
+
+        <RadioButton
+            android:textSize="40px"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关注"/>
+
+        <RadioButton
+            android:textSize="40px"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="购物车"/>
+
+        <RadioButton
+            android:textSize="40px"
+            android:gravity="center_horizontal"
+            android:background="#ff0000"
+            android:button="@null"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/addgou"
+            android:text="加入购物车"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

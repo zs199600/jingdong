@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">jingdong</string>
+    <string name="pageBehavior" translatable="false">com.example.administrator.jingdong.myview.PageBehavior</string>
+</resources>

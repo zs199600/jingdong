@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <ImageView
+          android:id="@+id/scanning_img"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:padding="15dp"
+          android:src="@drawable/scanning_cmmon" />
+      <ImageView
+          android:layout_centerInParent="true"
+          android:layout_width="64dp"
+          android:layout_height="32dp"
+          android:src="@drawable/find_icon"
+          />
+
+      <ImageView
+          android:layout_alignParentRight="true"
+          android:id="@+id/advisory_img"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:padding="15dp"
+          android:src="@drawable/advisory_common" />
+
+      <ImageView
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@+id/advisory_img"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:src="@drawable/my_care"
+          />
+
+
+  </RelativeLayout>
+  <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/tab"></android.support.design.widget.TabLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:id="@+id/vp"/>
+
+</LinearLayout>

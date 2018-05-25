@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="40px"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:textSize="40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="编辑"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50px"
+        android:id="@+id/deng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textSize="30px"
+            android:layout_marginLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/denglu"
+            android:text="登录"/>
+        <TextView
+            android:textSize="30px"
+            android:layout_marginLeft="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录后才能查看购物车"/>
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:id="@+id/edlist"></ExpandableListView>
+    <LinearLayout
+        android:id="@+id/goubutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:textSize="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb"
+            android:text="全选/反选"/>
+        <LinearLayout
+            android:id="@+id/bianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="30px"
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计:"/>
+
+            <TextView
+                android:textSize="30px"
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hj"
+                android:text="0"/>
+
+            <Button
+                android:textSize="30px"
+                android:layout_marginLeft="90px"
+                android:background="#ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jiesuan"
+                android:text="去结算"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/wancheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginLeft="350px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textSize="30px"
+                android:id="@+id/shanchu"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.jingdong.kuangjia.Sousuokuang">
+    <include layout="@layout/fenlei_main_title"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热搜"
+        android:textSize="50px"/>
+    <com.example.administrator.jingdong.myview.Myview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mv"></com.example.administrator.jingdong.myview.Myview>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史记录"
+        android:textSize="50px"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="清空历史记录"
+        android:gravity="center_horizontal"
+        android:id="@+id/qingkong"/>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/leftjiantou"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80px"
+            android:layout_weight="1"
+            android:background="@drawable/home_title_bar_search_corner_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ss" />
+
+            <TextView
+                android:id="@+id/fl_sousuo"
+                android:layout_width="0dp"
+                android:layout_height="90px"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="你好啊 我来啦 快跑啊"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/root" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qie"
+            android:layout_gravity="center_vertical"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/kind_grid"
+            />
+
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:textColor="@drawable/sousuo_bg"
+            android:checked="true"
+            android:textSize="70px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb"
+            android:text="综合"/>
+
+        <RadioButton
+            android:textColor="@drawable/sousuo_bg"
+            android:id="@+id/rb1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="销量"
+            android:textSize="70px" />
+        <RadioButton
+            android:textColor="@drawable/sousuo_bg"
+            android:textSize="70px"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:text="价格"/>
+    </RadioGroup>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xrc"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+</LinearLayout>
